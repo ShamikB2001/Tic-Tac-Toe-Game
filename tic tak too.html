@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tic tac too</title>
+	<script type="text/javascript">
+	{
+		function x1()
+		{
+			var x=(document.getElementById("t1").value);
+			x='X';
+			document.getElementById("t1").value=x;
+		}
+		function x2()
+		{
+			var x=(document.getElementById("t2").value);
+			x='X';
+			document.getElementById("t2").value=x;
+		}
+		function x3()
+		{
+			var x=(document.getElementById("t3").value);
+			x='X';
+			document.getElementById("t3").value=x;
+		}
+		function x4()
+		{
+			var x=(document.getElementById("t4").value);
+			x='X';
+			document.getElementById("t4").value=x;
+		}
+		function x5()
+		{
+			var x=(document.getElementById("t5").value);
+			x='X';
+			document.getElementById("t5").value=x;
+		}
+		function x6()
+		{
+			var x=(document.getElementById("t6").value);
+			x='X';
+			document.getElementById("t6").value=x;
+		}
+		function x7()
+		{
+			var x=(document.getElementById("t7").value);
+			x='X';
+			document.getElementById("t7").value=x;
+		}
+		function x8()
+		{
+			var x=(document.getElementById("t8").value);
+			x='X';
+			document.getElementById("t8").value=x;
+		}
+		function x9()
+		{
+			var x=(document.getElementById("t9").value);
+			x='X';
+			document.getElementById("t9").value=x;
+		}
+		function o1()
+		{
+			var x=(document.getElementById("t1").value);
+			x='O';
+			document.getElementById("t1").value=x;
+		}
+		function o2()
+		{
+			var x=(document.getElementById("t2").value);
+			x='O';
+			document.getElementById("t2").value=x;
+		}
+		function o3()
+		{
+			var x=(document.getElementById("t3").value);
+			x='O';
+			document.getElementById("t3").value=x;
+		}
+		function o4()
+		{
+			var x=(document.getElementById("t4").value);
+			x='O';
+			document.getElementById("t4").value=x;
+		}
+		function o5()
+		{
+			var x=(document.getElementById("t5").value);
+			x='O';
+			document.getElementById("t5").value=x;
+		}
+		function o6()
+		{
+			var x=(document.getElementById("t6").value);
+			x='O';
+			document.getElementById("t6").value=x;
+		}
+		function o7()
+		{
+			var x=(document.getElementById("t7").value);
+			x='O';
+			document.getElementById("t7").value=x;
+		}
+		function o8()
+		{
+			var x=(document.getElementById("t8").value);
+			x='O';
+			document.getElementById("t8").value=x;
+		}
+		function o9()
+		{
+			var x=(document.getElementById("t9").value);
+			x='O';
+			document.getElementById("t9").value=x;
+		}
+		function start_game()
+		{
+			var x1;
+			var y1;
+			x1=prompt("Enter the name of Player 1");
+			y1=prompt("Enter the name of Player 2");
+				if(x1==null)
+					x1='Player 1';
+				if(y1==null)
+					y1='Player 2';
+			document.getElementById("p3").value=x1;
+			document.getElementById("p4").value=y1;
+		}
+		function check()
+		{
+			var a1=(document.getElementById("t1").value);
+			var a2=(document.getElementById("t2").value);
+			var a3=(document.getElementById("t3").value);
+			var a4=(document.getElementById("t4").value);
+			var a5=(document.getElementById("t5").value);
+			var a6=(document.getElementById("t6").value);
+			var a7=(document.getElementById("t7").value);
+			var a8=(document.getElementById("t8").value);
+			var a9=(document.getElementById("t9").value);
+			var x=(document.getElementById("p3").value);
+			var y=(document.getElementById("p4").value);
+			if((a1=='X' && a2=='X' && a3=='X')||(a4=='X' && a5=='X' && a6=='X')||(a7=='X' && a8=='X' && a9=='X')||(a1=='X' && a4=='X' && a7=='X')||(a2=='X' && a5=='X' && a8=='X')||(a3=='X' && a6=='X' && a9=='X')||(a1=='X' && a5=='X' && a9=='X')||(a3=='X' && a5=='X' && a7=='X'))
+					alert(x+" is winer");	
+			else if((a1=='O' && a2=='O' && a3=='O')||(a4=='O' && a5=='O' && a6=='O')||(a7=='O' && a8=='O' && a9=='O')||(a1=='O' && a4=='O' && a7=='O')||(a2=='O' && a5=='O' && a8=='O')||(a3=='O' && a6=='O' && a9=='O')||(a1=='O' && a5=='O' && a9=='O')||(a3=='O' && a5=='O' && a7=='O'))
+					alert(y+" is winer");	
+			else
+				alert("Match drow");
+
+		}
+	}
+	</script>
+	<style type="text/css">
+		.p1
+		{
+			width: 200px;
+			height: 20px;
+			border: 1px solid #00ffff;
+		}
+		.p3{
+			background-color:transparent;
+			border: none;
+			color: #00ffff; 
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			border-radius: 5px;
+			font-size: 18px;
+		}
+		input{
+			width: 70px;
+			height: 60px;
+			text-align: center;
+			font-size: 30px;
+			background-color: transparent;
+			border:none;
+			color: #00ffff; 
+        }
+		.table1{
+			margin-top: 150px;
+			width: 280px;
+		}
+		.table2{
+			width: 70%;
+			height: 70%;
+		    box-shadow: 0px 0px 15px 10px #00ffff;
+
+		}
+		body
+		{
+			background-color: #000000;
+			margin-top: 50px;
+		}
+		input[type=button]
+		{
+            background-image: linear-gradient(#00ffff,#003333);
+            height: 100%;
+            border: none;
+            width: 100%;
+		}
+		.b1
+		{
+			
+			cursor: pointer;		}
+		.bc{
+			width: 120px;
+			height: 30px;
+			cursor: pointer;
+			background-image: linear-gradient(#00ffff,#003333);
+			border: none;
+			border-radius: 5px;
+		}
+		.bc:hover
+		{
+            background-image: linear-gradient(#003333,#00ffff);
+		}
+         .pt1
+         {
+         	border: none;
+         }
+        .tt1{
+			border:none;
+		}
+		td
+		{
+			border: 1px solid #00ffff;
+			text-align: center;
+		}
+		
+	</style>
+</head>
+<body>
+<table align="center" class="table1" cellpadding="10">
+	<tr>
+		<td colspan="2" class="tt1">
+		<!-- display -->
+			<table class="table2" align="center">
+				<tr>
+					<td><input type="text" name="text1" id="t1"></td>
+					<td><input type="text" name="text1" id="t2"></td>
+					<td><input type="text" name="text1" id="t3"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="text1" id="t4"></td>
+					<td><input type="text" name="text1" id="t5"></td>
+					<td><input type="text" name="text1" id="t6"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="text1" id="t7"></td>
+					<td><input type="text" name="text1" id="t8"></td>
+					<td><input type="text" name="text1" id="t9"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="tt1">
+	<!--Player one -->
+			<table align="center" cellspacing="5">
+				<tr> <td colspan="3" class="tt1"><input type="text" name="text1" id="p3" class="p3" placeholder="Player 1"></td> </tr>
+				<tr>
+					<td><button class="b1" onclick="x1()">1</button></td>
+					<td><button class="b1" onclick="x2()">2</button></td>
+					<td><button class="b1" onclick="x3()">3</button></td>
+				</tr>
+				<tr>
+					<td><button class="b1" onclick="x4()">4</button></td>
+					<td><button class="b1" onclick="x5()">5</button></td>
+					<td><button class="b1"onclick="x6()">6</button></td>
+				</tr>
+				<tr>
+					<td><button class="b1" onclick="x7()">7</button></td>
+					<td><button class="b1" onclick="x8()">8</button></td>
+					<td><button class="b1" onclick="x9()">9</button></td>
+				</tr>
+			</table>
+		</td>
+		<td class="tt1">
+	<!--Player Two -->
+			<table align="center" cellspacing="5">
+				<tr> 
+					<td colspan="3" class="tt1"><input type="text" name="text1" id="p4" class="p3" placeholder="Player 2"></td> 
+				</tr>
+				<tr>
+					<td><button class="b1" onclick="o1()">1</button></td>
+					<td><button class="b1" onclick="o2()">2</button></td>
+					<td><button class="b1" onclick="o3()">3</button></td>
+				</tr>
+				<tr>
+					<td><button class="b1" onclick="o4()">4</button></td>
+					<td><button class="b1" onclick="o5()">5</button></td>
+					<td><button class="b1" onclick="o6()">6</button></td>
+				</tr>
+				<tr>
+					<td><button class="b1" onclick="o7()">7</button></td>
+					<td><button class="b1" onclick="o8()">8</button></td>
+					<td><button class="b1" onclick="o9()">9</button></td>
+				</tr>
+			</table>
+    	</td>
+    </tr>
+   	<tr>
+		<td class="tt1"><button class="bc" onclick="start_game()">Play</button></td>
+		<td class="tt1"><button class="bc" onclick="check()">Check</button></td>
+	</tr>
+</table>
+</body>
+</html>
